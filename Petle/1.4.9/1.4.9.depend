@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1615796538 source:c:\jezykc\ps-gr4-piotrowskitomasz\petle\1.4.9\main.c
+	<stdio.h>
+	<stdlib.h>
+
