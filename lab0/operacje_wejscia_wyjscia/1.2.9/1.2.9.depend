@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1616948515 source:c:\jezykc\ps-gr4-piotrowskitomasz\lab0\operacje_wejscia_wyjscia\1.2.9\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
