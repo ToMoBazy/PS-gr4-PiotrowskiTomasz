@@ -7,6 +7,12 @@ int main()
     printf("Podaj n: ");
     scanf("%d", &n);
 
+    if(n<0)
+    {
+        printf("zla liczba");
+        exit(0);
+    }
+
     int dodatnie=0, ujemne=0, zera=0;
 
     for (int i = 0; i < n; i++)
