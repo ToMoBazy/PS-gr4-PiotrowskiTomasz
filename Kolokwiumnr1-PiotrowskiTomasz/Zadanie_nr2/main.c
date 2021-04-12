@@ -35,7 +35,6 @@ float funkcja(int n, int m)
 
 
 
-
    return zm;
 
 
@@ -43,7 +42,16 @@ float funkcja(int n, int m)
 }
 int main()
 {
-    float pom;
+    float pom,n,m;
+    printf("Podaj liczbe: ");
+    scanf("%f", &n);
+    printf("Podaj czym potegujemy: ");
+    scanf("%f", &m);
+    if((n==0)&&(m==0))
+    {
+        printf("Nie da sie tak");
+        exit(0);
+    }
 
     pom=funkcja(n,m);
 
