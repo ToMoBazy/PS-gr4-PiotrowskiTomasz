@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-int funkcja(int n, int m)
+float funkcja(int n, int m)
 {
-    int zm=1;
+    float zm=1;
    for(int i=0; i<m; i++)
    {
        zm=n*zm;
@@ -20,14 +20,20 @@ int funkcja(int n, int m)
 
    if(m<0)
    {
-    for(int i=0; i<m; i++)
+    for(int i=0; i<m*(-1); i++)
    {
        zm=n*zm;
    }
 
+
+
    return 1/zm;
 
    }
+
+
+
+
 
 
    return zm;
@@ -37,10 +43,10 @@ int funkcja(int n, int m)
 }
 int main()
 {
-    int pom;
+    float pom;
 
-    pom=funkcja(1,-5);
+    pom=funkcja(n,m);
 
-    printf("%d", pom);
+    printf("%f", pom);
 
 }
