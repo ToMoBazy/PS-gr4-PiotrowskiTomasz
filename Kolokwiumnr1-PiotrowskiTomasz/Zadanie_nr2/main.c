@@ -2,7 +2,7 @@
 #include <stdlib.h>
 float funkcja(int n, int m)
 {
-    float zm=1;
+   float zm=1;
    for(int i=0; i<m; i++)
    {
        zm=n*zm;
@@ -20,7 +20,7 @@ float funkcja(int n, int m)
 
    if(m<0)
    {
-    for(int i=0; i<m*(-1); i++)
+   for(int i=0; i<m*(-1); i++)
    {
        zm=n*zm;
    }
