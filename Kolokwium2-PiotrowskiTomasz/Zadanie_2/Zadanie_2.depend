@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1623244526 source:c:\jezykc\ps-gr4-piotrowskitomasz\kolokwium2-piotrowskitomasz\zadanie_2\main.c
+1623247662 source:c:\jezykc\ps-gr4-piotrowskitomasz\kolokwium2-piotrowskitomasz\zadanie_2\main.c
 	<stdio.h>
+	<stdlib.h>
 	<time.h>
 

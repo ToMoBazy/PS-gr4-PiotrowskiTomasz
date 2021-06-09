@@ -1,17 +1,18 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 
 #define MAX_LEN 20
 
-int dlugosc(char nap[MAX_LEN])
+int dlugosc(const char nap[MAX_LEN])
 {
-    int ile = 0;
+    int x = 0;
 
     for(int i = 0; nap[i] != 0 && i < MAX_LEN; i++)
     {
-        ile++;
+        x++;
     }
-    return ile;
+    return x;
 }
 
 struct Produkt
@@ -34,14 +35,14 @@ struct Produkt* makeProdukt(const char* nazwa, double cenaBrutto, float stawkaVa
 
 struct Produkt* makeProdukt2(const struct Produkt* produkt)
 {
-    struct Produkt* pro = malloc(sizeof(struct Produkt));
+    struct Produkt* a = malloc(sizeof(struct Produkt));
     for(int i=0; i<20; i++)
     {
-        pro->nazwa[i] = produkt-> nazwa[i];
+        a->nazwa[i] = produkt-> nazwa[i];
     }
-    pro->cenaBrutto = produkt-> cenaBrutto;
-    pro->stawkaVat = produkt-> stawkaVat;
-    return pro;
+    a->cenaBrutto = produkt-> cenaBrutto;
+    a->stawkaVat = produkt-> stawkaVat;
+    return a;
 };
 
 double cenaNetto(const struct Produkt* produkt)
@@ -75,8 +76,18 @@ int main()
     scanf(" %s", nap);
     printf("Podaj cena brutto do dodania: ");
     scanf(" %lf", &cenaBrutto);
+    if(cenaBrutto==0)
+    {
+        printf(" zla cena");
+        return 0;
+    }
     printf("Podaj stawkeVat do dodania: ");
     scanf(" %f", &stawkVat);
+     if(stawkVat==0)
+    {
+        printf(" zly vat");
+        return 0;
+    }
     struct Produkt* produkt1 = makeProdukt(nap, cenaBrutto, stawkVat);
     struct Produkt* produkt2 = makeProdukt2(produkt1);
     printf("%lf\n", cenaNetto(produkt1));
