@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1623243547 source:c:\jezykc\ps-gr4-piotrowskitomasz\kolokwium2-piotrowskitomasz\zadanie_3\main.c
-	<stdio.h>
-	<stdlib.h>
-	<ctype.h>
-
