@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1618153746 source:c:\jezykc\ps-gr4-piotrowskitomasz\lab1\131\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

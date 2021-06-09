@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1621845899 source:c:\jezykc\ps-gr4-piotrowskitomasz\wskazniki\xddd\main.c
+	<stdio.h>
+	<stdlib.h>
+	"point.h"
+	"point-1.c"
+	"point-2.c"
+
+1621838580 c:\jezykc\ps-gr4-piotrowskitomasz\wskazniki\xddd\point.h
+
+1621838580 c:\jezykc\ps-gr4-piotrowskitomasz\wskazniki\xddd\point-1.c
+	<stdio.h>
+	<math.h>
+	"point.h"
+
+1621838580 c:\jezykc\ps-gr4-piotrowskitomasz\wskazniki\xddd\point-2.c
+	<stdio.h>
+	<math.h>
+	"point.h"
+

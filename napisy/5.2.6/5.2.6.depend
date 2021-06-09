@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1620637348 source:c:\jezykc\ps-gr4-piotrowskitomasz\napisy\5.2.6\main.c
+	<stdio.h>
+	<stdlib.h>
+
