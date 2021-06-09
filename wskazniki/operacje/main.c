@@ -4,7 +4,7 @@ int main(int argc, char *argv[])
 {
     FILE *fp;
 
-    if (argc != 2) {
+    if (argc > 2) {
         printf("Sposób u¿ycia: %s <nazwa-pliku>\n", argv[0]);
         return 1;
     }
